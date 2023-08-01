@@ -1,1 +1,1 @@
-console.log("God is good");
+console.log("God is amazing");
