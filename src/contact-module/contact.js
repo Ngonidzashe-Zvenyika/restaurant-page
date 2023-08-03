@@ -3,7 +3,7 @@ import  mail from "./mail.svg";
 import home from "./home.svg";
 import location from "./location.png";
 
-export default function contacts() {
+export default function contact() {
     const contact = document.createElement("div");
     contact.classList.add("contact-container");
 
@@ -42,9 +42,9 @@ export default function contacts() {
     pin.src = location;
     pin.alt = "Billy's Burgers Location."
 
-    div.appendChild(numberContainer);
-    div.appendChild(emailContainer);
-    div.appendChild(addressContainer);
-    div.appendChild(pin);
-    return div;
+    contact.appendChild(numberContainer);
+    contact.appendChild(emailContainer);
+    contact.appendChild(addressContainer);
+    contact.appendChild(pin);
+    return contact;
 }

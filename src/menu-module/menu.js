@@ -25,13 +25,14 @@ export default function menu() {
     return div;
 }
 
-function item(item, aboutItem, amount, source) {
+function item(item, aboutItem, amount, src) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
 
     const image = document.createElement("img");
     image.classList.add("image");
-    image.src = source;
+    image.src = src;
+    image.alt = item;
 
     const description = document.createElement("div");
     description.classList.add("description");
