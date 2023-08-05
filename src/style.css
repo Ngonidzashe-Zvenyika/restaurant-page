@@ -1,9 +1,14 @@
+@font-face {
+    font-family: Merienda;
+    src: url(./Merienda-VariableFont_wght.ttf) format("truetype");
+}
+
 :root {
     font-size: 62.5%; 
 }
 
 *, ::before, ::after {
-    font-family: Arial, sans-serif, system-ui, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Merienda, Arial, sans-serif, system-ui, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.6rem;
     padding: 0;
     margin: 0;
