@@ -17,4 +17,6 @@ Practice use of `ES6 Modules` `NPM` and `Weback`
   </a>on</a><a href="https://unsplash.com/photos/jcLcWL8D7AQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash</a>,<a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5988435"> Pixabay </a>and Freepik
 
 * Icons by <a href="https://ionic.io/ionicons">Ionic</a>
+
+* Fonts from <a href="https://fonts.google.com/">Google Fonts</a>
   
