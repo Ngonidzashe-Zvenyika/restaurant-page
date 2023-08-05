@@ -28,7 +28,7 @@ body {
 .backdrop {
     position: fixed;
     width: 2560px;
-    height: 100svh;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
