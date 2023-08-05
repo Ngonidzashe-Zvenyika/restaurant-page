@@ -9,22 +9,24 @@ import caesar from "./caesar.jpg";
 import greek from "./greek.jpg";
 import cocktail from "./cocktail.jpg";
 
+// This function returns a div containing the information on the menu page;
 export default function menu() {
-    const div = document.createElement("div")
-    div.classList.add("menu-container");
-    div.appendChild(item("Classic Beef Burger", "Premium beef patty, Glazed onion, Billy's sauce, Toasted bun", "$8", beef));
-    div.appendChild(item("Breakfast Burger", "Premium beef patty, Fried egg, Cheddar, Rocket, Billy's sauce, Toasted bun", "$10", breakfast));
-    div.appendChild(item("Pulled Pork Burger", "Succulant smoked swine, Vegetable garnish, Billy's sauce, Toasted bun", "$12", pork));
-    div.appendChild(item("Chicken Burger", "Shredded chicken, Avocado, Parmesian sauce, Toasted bun", "$11", chicken));
-    div.appendChild(item("Steak Sandwich", "Prime steak, Lettuce, Pickle, Glazed onion, Tomato, Billy's sauce, Toasted bun", "$12", sandwich));
-    div.appendChild(item("Potato wedges", "Uniform portion of wedges lightly seasoned with kosher salt", "$8", wedges));
-    div.appendChild(item("Crispy fries", "Uniform portion of fries with chilli flakes", "$6", fries));
-    div.appendChild(item("Caesar salad", "Shredded chicken, Lettuce,  Onion, Parmesian, Caesar's dressing", "$7", caesar));
-    div.appendChild(item("Greek salad", "Cherry tomato, Feta, Olives, Onion, Cucumber, Pepper, Greek dressing", "$5", greek));
-    div.appendChild(item("Billy's Cocktail", "Assorted non-alchoholic cocktails", "$3", cocktail));
-    return div;
+    const container = document.createElement("div")
+    container.classList.add("menu-container");
+    container.appendChild(item("Classic Beef Burger", "Premium beef patty, Glazed onion, Billy's sauce, Toasted bun", "$8", beef));
+    container.appendChild(item("Breakfast Burger", "Premium beef patty, Fried egg, Cheddar, Rocket, Billy's sauce, Toasted bun", "$10", breakfast));
+    container.appendChild(item("Pulled Pork Burger", "Succulant smoked swine, Vegetable garnish, Billy's sauce, Toasted bun", "$12", pork));
+    container.appendChild(item("Chicken Burger", "Shredded chicken, Avocado, Parmesian sauce, Toasted bun", "$11", chicken));
+    container.appendChild(item("Steak Sandwich", "Prime steak, Lettuce, Pickle, Glazed onion, Tomato, Billy's sauce, Toasted bun", "$12", sandwich));
+    container.appendChild(item("Potato wedges", "Uniform portion of wedges lightly seasoned with kosher salt", "$8", wedges));
+    container.appendChild(item("Crispy fries", "Uniform portion of fries with chilli flakes", "$6", fries));
+    container.appendChild(item("Caesar salad", "Shredded chicken, Lettuce,  Onion, Parmesian, Caesar's dressing", "$7", caesar));
+    container.appendChild(item("Greek salad", "Cherry tomato, Feta, Olives, Onion, Cucumber, Pepper, Greek dressing", "$5", greek));
+    container.appendChild(item("Billy's Cocktail", "Assorted non-alchoholic cocktails", "$3", cocktail));
+    return container;
 }
 
+// This function creates a menu item and is used by the exported function to avoid repeating similar code;
 function item(item, aboutItem, amount, src) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");

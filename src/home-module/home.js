@@ -1,5 +1,6 @@
 import logo from "./chef.jpg";
 
+// This function returns a div containing the information on the home page;
 export default function home() {
     const container = document.createElement("div");
     container.classList.add("home-container");

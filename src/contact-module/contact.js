@@ -2,6 +2,7 @@ import call from "./call.svg";
 import  mail from "./mail.svg";
 import location from "./location.jpg";
 
+// This function returns a div containing the information on the contact page;
 export default function contact() {
     const contact = document.createElement("div");
     contact.classList.add("contact-container");
