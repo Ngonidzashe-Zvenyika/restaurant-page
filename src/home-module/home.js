@@ -1,24 +1,28 @@
+import logo from "./chef.jpg";
+
 export default function home() {
-    const div = document.createElement("div");
-    div.classList.add("home-container");
+    const container = document.createElement("div");
+    container.classList.add("home-container");
+
+    const chef = document.createElement("img");
+    chef.classList.add("chef");
+    chef.src = logo;
+    chef.alt = "chef";
 
     const aboutHeading = document.createElement("h2");
     aboutHeading.innerText = "About Us";
     const about = document.createElement("p");
-    about.innerText = "Billy loved every moment of bringing people together with a tasty meal and we strive to continue living his dream. It's not just about food, it's about family.";
+    about.innerText = "Billy loved every moment of bringing people together with a tasty meal and we strive to continue living his dream. It's not just about food, it's about family. We welcome you to join us :)";
 
     const hoursHeading = document.createElement("h2");
     hoursHeading.innerText = "Hours";
     const hours = document.createElement("p");
-    hours.innerText = "Mon: 8am - 4pm \n Tue: 10am - 6pm \n Wed: 8am - 4pm \n Thu: 10am - 6pm \n Fri: 8am - 2pm \n Sat: 1pm - 11pm \n Sun: 12pm - 2pm \n";
+    hours.innerText = "Mon/Wed: 0800 - 1600\n Tue/Thur: 1000 - 1800\n Sat: 1300 - 2300\n Sun: 1200 - 1400";
 
-    const name = document.createElement("h2");
-    name.innerText = "We hope to see you soon!";
-
-    div.appendChild(aboutHeading);
-    div.appendChild(about);
-    div.appendChild(hoursHeading);
-    div.appendChild(hours);
-    div.appendChild(name);
-    return div;
+    container.appendChild(chef);
+    container.appendChild(aboutHeading);
+    container.appendChild(about);
+    container.appendChild(hoursHeading);
+    container.appendChild(hours);
+    return container;
 }

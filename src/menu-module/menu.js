@@ -12,16 +12,16 @@ import cocktail from "./cocktail.jpg";
 export default function menu() {
     const div = document.createElement("div")
     div.classList.add("menu-container");
-    div.appendChild(item("Classic Beef Burger", "Premium Beef Patty, Glazed Onion, Billy's Sauce, Toasted Bun", "$8", beef));
-    div.appendChild(item("Breakfast Burger", "Premium Beef Patty, Egg, Cheddar, Rocket, Billy's Sauce, Toasted Bun", "$10", breakfast));
-    div.appendChild(item("Pulled Pork Burger", "Succulant Smoked Swine, Vegetable Garnish, Billy's Sauce, Toasted Bun", "$12", pork));
-    div.appendChild(item("Chicken Burger", "Shredded Chicken, Avocado, Parmesian Sauce, Toasted Bun", "$11", chicken));
-    div.appendChild(item("Steak Sandwich", "Prime Steak, Lettuce, Pickle, Glazed Onion, Tomato, Billy's Sauce, Toasted Bun", "$12", sandwich));
-    div.appendChild(item("Potato Wedges", "Uniform portion of wedges lightly seasoned with kosher salt", "$8", wedges));
-    div.appendChild(item("Crispy Fries", "Uniform portion of fries with a cross-sectional area of one centimeter each with chilli flakes", "$6", fries));
-    div.appendChild(item("Caesar Salad", "Shredded Chicken, Lettuce,  Onion, Parmesian, Caesar's Dressing", "$7", caesar));
-    div.appendChild(item("Greek Salad", "Cherry Tomato, Feta, Olives, Onion, Cucumber, Pepper, Greek Dressing", "$5", greek));
-    div.appendChild(item("Billy's Cocktail", "Assorted Fruit Cocktail", "$3", cocktail));
+    div.appendChild(item("Classic Beef Burger", "Premium beef patty, Glazed onion, Billy's sauce, Toasted bun", "$8", beef));
+    div.appendChild(item("Breakfast Burger", "Premium beef patty, Fried egg, Cheddar, Rocket, Billy's sauce, Toasted bun", "$10", breakfast));
+    div.appendChild(item("Pulled Pork Burger", "Succulant smoked swine, Vegetable garnish, Billy's sauce, Toasted bun", "$12", pork));
+    div.appendChild(item("Chicken Burger", "Shredded chicken, Avocado, Parmesian sauce, Toasted bun", "$11", chicken));
+    div.appendChild(item("Steak Sandwich", "Prime steak, Lettuce, Pickle, Glazed onion, Tomato, Billy's sauce, Toasted bun", "$12", sandwich));
+    div.appendChild(item("Potato wedges", "Uniform portion of wedges lightly seasoned with kosher salt", "$8", wedges));
+    div.appendChild(item("Crispy fries", "Uniform portion of fries with chilli flakes", "$6", fries));
+    div.appendChild(item("Caesar salad", "Shredded chicken, Lettuce,  Onion, Parmesian, Caesar's dressing", "$7", caesar));
+    div.appendChild(item("Greek salad", "Cherry tomato, Feta, Olives, Onion, Cucumber, Pepper, Greek dressing", "$5", greek));
+    div.appendChild(item("Billy's Cocktail", "Assorted non-alchoholic cocktails", "$3", cocktail));
     return div;
 }
 
@@ -37,7 +37,7 @@ function item(item, aboutItem, amount, src) {
     const description = document.createElement("div");
     description.classList.add("description");
 
-    const name = document.createElement("h3");
+    const name = document.createElement("h2");
     name.innerText = item;
 
     const ingredients = document.createElement("p");
@@ -51,7 +51,7 @@ function item(item, aboutItem, amount, src) {
     description.appendChild(name);
     description.appendChild(ingredients);
     description.appendChild(price);
-
+    
     menuItem.appendChild(image);
     menuItem.appendChild(description);
     return menuItem;

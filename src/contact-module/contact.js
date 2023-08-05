@@ -1,7 +1,6 @@
 import call from "./call.svg";
 import  mail from "./mail.svg";
-import home from "./home.svg";
-import location from "./location.png";
+import location from "./location.jpg";
 
 export default function contact() {
     const contact = document.createElement("div");
@@ -27,15 +26,8 @@ export default function contact() {
     emailContainer.appendChild(emailIcon);
     emailContainer.appendChild(email);
 
-    const addressContainer = document.createElement("div");
-    addressContainer.classList.add("icon-container");
-    const addressIcon = document.createElement("img");
-    addressIcon.classList.add("icon");
-    addressIcon.src = home;
     const address = document.createElement("p");
-    address.innerText = "422 Nemo St, Victoria, Australia"
-    addressContainer.appendChild(addressIcon);
-    addressContainer.appendChild(address);
+    address.innerText = "4 Nemo St, West Hollywood"
 
     const pin = document.createElement("img");
     pin.classList.add("location-pin");
@@ -44,7 +36,7 @@ export default function contact() {
 
     contact.appendChild(numberContainer);
     contact.appendChild(emailContainer);
-    contact.appendChild(addressContainer);
+    contact.appendChild(address);
     contact.appendChild(pin);
     return contact;
 }
